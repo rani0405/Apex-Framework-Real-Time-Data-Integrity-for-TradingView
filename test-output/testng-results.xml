@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-25T13:00:38 IST" name="Default suite" finished-at="2025-09-25T13:01:05 IST" duration-ms="26295">
+    <groups>
+    </groups>
+    <test started-at="2025-09-25T13:00:38 IST" name="Default test" finished-at="2025-09-25T13:01:05 IST" duration-ms="26295">
+      <class name="Test.RealTimePriceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.RealTimePriceTest@6c40365c]" started-at="2025-09-25T13:00:38 IST" name="setup" finished-at="2025-09-25T13:01:03 IST" duration-ms="24911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateLivePrice()[pri:0, instance:Test.RealTimePriceTest@6c40365c]" started-at="2025-09-25T13:01:03 IST" name="validateLivePrice" finished-at="2025-09-25T13:01:03 IST" duration-ms="132" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"YOUR_PRICE_TICKER_SELECTOR"}
+  (Session info: chrome=140.0.7339.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82c9c8a383ab281e78f1ded1759ec684, findElement {using=css selector, value=YOUR_PRICE_TICKER_SELECTOR}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Rani\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60459}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60459/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82c9c8a383ab281e78f1ded1759ec684]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"YOUR_PRICE_TICKER_SELECTOR"}
+  (Session info: chrome=140.0.7339.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.0', revision: 'e5a96349ce'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [82c9c8a383ab281e78f1ded1759ec684, findElement {using=css selector, value=YOUR_PRICE_TICKER_SELECTOR}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Rani\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60459}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60459/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82c9c8a383ab281e78f1ded1759ec684
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at Test.RealTimePriceTest.validateLivePrice(RealTimePriceTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLivePrice -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test.RealTimePriceTest@6c40365c]" started-at="2025-09-25T13:01:03 IST" name="teardown" finished-at="2025-09-25T13:01:05 IST" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Test.RealTimePriceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
